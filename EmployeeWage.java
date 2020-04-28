@@ -1,4 +1,4 @@
-public class Empywage {
+public class EmployeeWage {
 	public static void main(String[] args){
 	
 		int IS_PRESENT=1;
