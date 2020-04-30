@@ -5,19 +5,22 @@ public class Empdailywage {
 	
 		System.out.println("Welcome to the Employee wage computation Program");
 	   
-		int isPartTime=1; 
-		int isFullTime=2; 
-		int empRatePerHr=20;
-		int totalSalary=0;
-		int empHrs=0;
-		int numWorkingDays=20; 
-		for(int day=1; day<=numWorkingDays;day++) 
+	
+	    int IS_PART_TIME=1;
+		int IS_FULL_TIME=2;
+		int MAX_HRS_IN_MONTH=100; 
+		int EMP_RATE_PER_HR=20; 
+		int NUM_WORKING_DAYS=20;
+		int totalEmpHr=0; 
+		int totalWorkingDays=0;
+
+		while(totalEmpHr <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_WORKING_DAYS)
 		{
+			totalWorkingDays++; 
 			int attendance=(int)(Math.random()*3); 
-			int salary=0;
+			int empHrs=0;
 			switch(attendance) 
-			{
-			case 1:
+			{ case 1:
 				empHrs=8; 
 				break; 
 			case 2:
@@ -25,10 +28,12 @@ public class Empdailywage {
 				break;
 			default:
 				empHrs=0;
-				break;
-			}
-
-			salary=empHrs*empRatePerHr ; totalSalary=(totalSalary+salary ); }
+				break; 
+			} 
+			totalEmpHr=(totalEmpHr+empHrs); 
+		} 
+		int totalSalary=(totalEmpHr*EMP_RATE_PER_HR);
 		System.out.println("Salary Of Employee= "+totalSalary );
+
      }
 }
