@@ -68,3 +68,9 @@ public class CompanyEmpWage {
         System.out.println("Total Wage for Dmart compnay: " + empWageBuilder.getTotalWage(company: "Dmart"));
       } 
   }
+
+
+
+
+
+
