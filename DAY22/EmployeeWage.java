@@ -1,4 +1,4 @@
-class EmployeWage{
+public class EmployeWage{
      static final int IS_PART_TIME=1; 
 	static final int IS_FULL_TIME=2; 
 	
