@@ -103,14 +103,7 @@ public static void main(String[] args)
 	
 	
 	public EmployeWage(String company, int empRatePerHour, int maxHoursPerMonth, int numOfWorkingDays)
-        {
-	
-		this.company = company;
-		this.empRatePerHour = empRatePerHour;
-		this.maxHoursPerMonth = maxHoursPerMonth;
-		this.numOfWorkingDays = numOfWorkingDays;
-	}
-
+  
          private int computeEmpWage() 
            {
 		int empHrs=0, totalEmpHrs=0,totalWorkingDays=0;
