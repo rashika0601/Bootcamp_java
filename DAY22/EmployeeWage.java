@@ -102,14 +102,6 @@ public static void main(String[] args)
 	private final int numOfWorkingDays;
 	
 	
-	public EmployeWage(String company, int empRatePerHour, int maxHoursPerMonth, int numOfWorkingDays)
-        {
-	
-		this.company = company;
-		this.empRatePerHour = empRatePerHour;
-		this.maxHoursPerMonth = maxHoursPerMonth;
-		this.numOfWorkingDays = numOfWorkingDays;
-	}
 
          private int computeEmpWage() 
            {
