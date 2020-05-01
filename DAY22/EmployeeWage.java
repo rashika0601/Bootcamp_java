@@ -1,4 +1,23 @@
 public class EmployeWage{
+
+public static void main(String[] args) 
+    {
+     System.out.println("Welcome to the Employee wage computation");    	
+     // decleartion
+	int attendance=(int)(Math.random()*2); 
+	int salary; 
+    int empRatePerHr=20; 
+	int empHrs=8; 
+	// Checking attandance
+		if (attendance == 1) 
+			// Calculating salary according to attandance and working hrs and rate per hrs
+            salary=empHrs*empRatePerHr ; 
+	        else
+		  salary=0;
+                    
+                System.out.println("Daily Wage of an Employee= " +salary);    
+     }
+
      static final int IS_PART_TIME=1; 
 	static final int IS_FULL_TIME=2; 
 	
@@ -47,5 +66,5 @@ public class EmployeWage{
 		System.out.println("Total Employee Wage for Company "+ dmart.company+" is: "+dmart.computeEmpWage());
                 EmployeWage  reliance=new EmployeWage("Reliance",10,2,20);
 		System.out.println("Total Employee Wage for Company "+ reliance.company+" is: "+reliance.computeEmpWage());
-	}
+  }
 }
